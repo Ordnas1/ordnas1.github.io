@@ -1,0 +1,17 @@
+// Var, functions y mixins para el script principal
+
+// Var
+
+// functions
+
+@function getRem($pxSize) {
+    @return #{$pxSize / 16px}rem
+};
+
+// Mixins 
+
+@mixin responsive($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+};
