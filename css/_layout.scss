@@ -8,4 +8,16 @@
           rgba(0, 0, 0, 0.7)
         ),url('../images/header-background.jpg');
     color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.l-main {
+    background-color: $col-white;
+}
+
+.l-section {
+    text-align: center;
+    margin: 0 15%;
 }

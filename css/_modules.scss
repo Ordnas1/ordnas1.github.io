@@ -5,6 +5,9 @@
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7));
     align-self: stretch;
+
+    
+
     & > ul {
         display: flex;
         justify-content: flex-end;
@@ -17,7 +20,8 @@
 
             & > a {
                 text-decoration: none;
-                color: white;
+                color: $col-white;
+                font-family: $font-text;
             }
         }
     }
@@ -29,10 +33,56 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     & > h1 {
         text-align: left;
         width: 100%;
+        font-family: $font-title;
+        font-size: getRem(70px);
+        color: $col-white;
     }
+
+    & > p {
+        font-family: $font-text;
+        line-height: 1.8rem;
+        font-size: getRem(18px);
+        color: $col-white;
+    }
+
+    & a {
+        color: $col-red;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.header-btn {
+    padding: 1rem 0.6rem;
+    margin-right: 1rem;
+    background-color: $col-dark;
+    border: none;
+    color: $col-white;
+    cursor: pointer;
+}
+
+.header-btn-em {
+    background-color: $col-darkred;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
+    grid-template-rows: auto;
+    
+    
+}
+
+.grid-cell {
+    width: 300px;
+    height: 300px;
 }
